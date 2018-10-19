@@ -1,0 +1,4 @@
+span.icon-wrapper(*ngFor="let navGroup of navGroups")
+  div(*ngIf="userHasNavAccess(navGroup)", [ngClass]="iconClass(navGroup)", (click)="goTo(navGroup)")
+    div([inlineSVG]="'assets/icon/nav/' + navGroup.icon")
+

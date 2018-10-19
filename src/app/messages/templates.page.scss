@@ -1,0 +1,33 @@
+@import 'theme/shared-classes';
+@import 'theme/style-guide';
+
+.templates-page {
+  &,
+  .content {
+    background-color: $color-content-background;
+  }
+
+  .content {
+    button.new-template {
+      @extend .boon-button;
+
+      float: right;
+      margin-bottom: 10px;
+      width: 180px;
+    }
+
+    .table {
+      @extend .boon-table;
+
+      .template-row {
+        cursor: pointer;
+      }
+    }
+
+    .templates-header {
+      display: flex;
+      padding: 10px 0;
+      justify-content: space-between;
+    }
+  }
+}
